@@ -12,10 +12,27 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "databaseExplorer",
+          "title": "Database Explorer",
+          "icon": "media/database-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "databaseExplorer": [
+        {
+          "id": "databaseView",
+          "name": "Databases"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "database-connecter.helloWorld",
-        "title": "Hello World"
+        "title": "Say Hello"
       }
     ]
   },
